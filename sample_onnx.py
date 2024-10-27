@@ -163,7 +163,7 @@ def main() -> None:
             elapsed_time = time.time() - start_time
 
             # 描画
-            image = draw_debug(
+            debug_image = draw_debug(
                 debug_image,
                 elapsed_time,
                 score_th,
@@ -178,8 +178,7 @@ def main() -> None:
                 break
 
             # 画面反映
-            cv2.imshow('D-FINE Sample', image)
-
+            cv2.imshow('D-FINE Sample', debug_image)
         cap.release()
         cv2.destroyAllWindows()
 
