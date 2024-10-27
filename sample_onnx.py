@@ -22,7 +22,7 @@ def get_args() -> argparse.Namespace:
     parser.add_argument(
         "--model",
         type=str,
-        default='model./dfine_s_obj2coco.onnx',
+        default='model/dfine_s_obj2coco.onnx',
     )
     parser.add_argument(
         '--score_th',
